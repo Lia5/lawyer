@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOneRegular.eot");
+  src: url("../fonts/YesevaOneRegular.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/YesevaOneRegular.woff") format("woff"), 
+  url("../fonts/YesevaOneRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ReginaKursiv-Italic";
+  src: url("../fonts/ReginaKursiv-Italic.eot");
+  src: url("../fonts/ReginaKursiv-Italic.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/ReginaKursiv-Italic.woff") format("woff"), 
+  url("../fonts/ReginaKursiv-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: "BuccaneerCyrRegular";
+  src: url("../fonts/BuccaneerCyrRegular.eot");
+  src: url("../fonts/BuccaneerCyrRegular.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/BuccaneerCyrRegular.woff") format("woff"), 
+  url("../fonts/BuccaneerCyrRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Kurale-Regular";
+  src: url("../fonts/Kurale-Regular.eot");
+  src: url("../fonts/Kurale-Regular.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/Kurale-Regular.woff") format("woff"), 
+  url("../fonts/Kurale-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "GentiumBookBasic";
+  src: url("../fonts/GenBkBasR.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "GentiumBookBasic";
+  src: url("../fonts/GenBkBasI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: "GentiumBookBasic";
+  src: url("../fonts/GenBkBasB.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "GentiumBookBasic";
+  src: url("../fonts/GenBkBasBI.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 900px;
+/*  background-image: url("../img/pattern.jpg");*/
+  font-family: "GentiumBookBasic", Georgia, "Times New Roman", Times, serif;
+  z-index: -2;
+}
+
+header {
+  position: relative;
+  padding: 22px;
+  background: linear-gradient(to right, #007203, #CEE2CC);
+  font-family: "YesevaOne", Georgia, "Times New Roman", Times, serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(1, 1, 1, 0.64);
+}
+
+header h1 {
+  padding: 10px;
+  margin: 0;
+}
+
+header img {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.contact {
+  padding: 10px;
+  width: 33%;
+  float: left;
+
+  font-size: 20px; 
+  font-weight: 400;
+}
+
+.contact h3 {
+  margin-top: 15px; 
+  font-family: "ReginaKursiv-Italic", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  
+}
+
+.fio {
+  padding: 10px 70px 10px 70px;
+  width: 46%;
+  float: right;
+  text-align: center;
+
+}
+.fio h2 {
+  margin-top: 15px; 
+  padding: 0;
+  font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
+  color: #000000;
+  font-size: 56px; 
+  font-weight: 800;
+  text-align: center;
+}
+
+.discription {
+  position: relative;
+}
+
+.judiciary {
+  position: absolute;
+  top: 1%;
+  right: 22%;
+}
+
+.sertifikates {
+  font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section h3 {
+  font-family: "YesevaOne", Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(1, 1, 1, 0.64);
+}
+
+.experience {
+  position: relative;
+  padding: 35px 75px 54px 88px;
+  width: 31%;
+  float: left;
+
+}
+.fon {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: -1;
+}
+
+.activities {
+  position: relative;
+  padding: 35px 75px 62px 88px;
+  width: 32%;
+  float: left;
+}
+
+.practice {
+  overflow: hidden;
+}
+
+.practice h2 {
+  font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
+  font-size: 38px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*высоту колонок выровняла %-тами*/
+/*
+.economy {
+  margin: 10px;
+  padding: 10px;
+  width: 25%;
+  float: left;
+  border: 3px solid #000000;
+}
+
+.bankruptcy {
+  margin: 10px;
+  padding: 10px;
+  width: 32%;
+  float: left;
+  border: 3px solid #000000;
+}
+
+.crime {
+  margin: 10px;
+  padding: 10px;
+  width: 27%;
+  float: left;
+  border: 3px solid #000000;
+}
+*/
+/*или сделать так:*/
+.economy {
+  margin: 10px;
+  padding: 10px;
+  width: 28%;
+  float: left;
+
+}
+
+.bankruptcy {
+  margin: 10px;
+  padding: 10px;
+  width: 28%;
+  float: left;
+  border-right: 3px solid #000000;
+  border-left: 3px solid #000000;
+}
+
+.crime {
+  margin: 10px;
+  padding: 10px;
+  width: 28%;
+  float: left;
+
+}
+
+.copy {
+  float: right;
+  font-size: 10px;
+}
+
+footer {
+  padding: 10px;
+  background: linear-gradient(to right, #007203, #CEE2CC);
+  
+}
