@@ -215,7 +215,6 @@ header img {
   position: absolute;
   top: 10%;
   right: 13%;
-/*  z-index: 2;*/
 }
 
 section h3 {
@@ -312,16 +311,17 @@ section h3 {
   padding: 10px;
   width: 28%;
   float: left;
-
-}
-
-.copy {
-  float: right;
-  font-size: 10px;
 }
 
 footer {
   padding: 10px;
+  text-align: right;
+  font-size: 15px;
+
   background: linear-gradient(to right, #007203, #CEE2CC);
-  
+}
+
+footer span {
+  color: #197C00;
+  font-weight: 800;
 }
