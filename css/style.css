@@ -322,6 +322,8 @@ footer {
 }
 
 footer span {
+  display: block;
+  float: right;
   color: #197C00;
   font-weight: 800;
 }
