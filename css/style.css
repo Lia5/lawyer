@@ -165,6 +165,17 @@ header img {
   text-align: center;
 }
 
+.team {
+  position: relative;
+  padding: 35px;
+}
+
+.team img {
+  position: absolute;
+  top: 10%;
+  right: 13%;
+}
+
 section h3 {
   font-family: "YesevaOne", Georgia, "Times New Roman", Times, serif;
   font-size: 25px;
