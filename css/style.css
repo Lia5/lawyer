@@ -9,31 +9,20 @@
 }
 
 @font-face {
-  font-family: "ReginaKursiv-Italic";
-  src: url("../fonts/ReginaKursiv-Italic.eot");
-  src: url("../fonts/ReginaKursiv-Italic.eot?#iefix") format("embedded-opentype"), 
-  url("../fonts/ReginaKursiv-Italic.woff") format("woff"), 
-  url("../fonts/ReginaKursiv-Italic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: italic;
-}
-
-@font-face {
-  font-family: "BuccaneerCyrRegular";
-  src: url("../fonts/BuccaneerCyrRegular.eot");
-  src: url("../fonts/BuccaneerCyrRegular.eot?#iefix") format("embedded-opentype"), 
-  url("../fonts/BuccaneerCyrRegular.woff") format("woff"), 
-  url("../fonts/BuccaneerCyrRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
   font-family: "Kurale-Regular";
   src: url("../fonts/Kurale-Regular.eot");
   src: url("../fonts/Kurale-Regular.eot?#iefix") format("embedded-opentype"), 
   url("../fonts/Kurale-Regular.woff") format("woff"), 
   url("../fonts/Kurale-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "CopperplateCyrillic-Bold";
+  src: url("../fonts/CopperplateCyrillic-Bold.eot");
+  src: url("../fonts/CopperplateCyrillic-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/CopperplateCyrillic-Bold.woff") format("woff"), 
+  url("../fonts/CopperplateCyrillic-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -83,8 +72,8 @@ body {
 header {
   position: relative;
   padding: 22px;
-  background: linear-gradient(to right, #007203, #CEE2CC);
-  font-family: "YesevaOne", Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(to right, #0505FF, #CEE2CC);
+  font-family: "CopperplateCyrillic-Bold", Georgia, "Times New Roman", Times, serif;
   color: #ffffff;
   font-size: 30px;
   font-weight: 400;
@@ -97,10 +86,16 @@ header h1 {
   margin: 0;
 }
 
-header img {
+.gerb {
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 4%;
+  right: 6%;
+}
+
+.judiciary {
+  position: absolute;
+  top: 10%;
+  left: 7%;
 }
 
 .clearfix::after {
@@ -124,10 +119,6 @@ header img {
 
 .contact h3 {
   margin-top: 15px; 
-  font-family: "ReginaKursiv-Italic", Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  
 }
 
 .fio {
@@ -138,82 +129,31 @@ header img {
 
 }
 .fio h2 {
-  margin-top: 15px; 
+  margin: 15px 0 0 0; 
   padding: 0;
-  font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
+  font-family: "CopperplateCyrillic-Bold", Georgia, "Times New Roman", Times, serif;
   color: #000000;
   font-size: 56px; 
   font-weight: 800;
   text-align: center;
 }
 
+.fio p {
+  margin: 10px 0 0 0;
+}
+
 .discription {
-  position: relative;
-}
-
-.judiciary {
-  position: absolute;
-  top: 1%;
-  right: 22%;
-}
-
-.sertifikates {
-  font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
-  font-size: 26px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.mini {
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-  z-index: 3;
-}
-
-.popup {
-  position: relative;
-  transition: all 5s ease-in-out;
-
-}
-
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
+  padding: 10px 0 0 30px;
 }
 
 .team {
-  padding: 35px;
+  padding: 10px 0 0 30px;
   position: relative;
 }
 
 .team img {
   position: absolute;
-  top: 10%;
+  top: -8px;
   right: 13%;
 }
 
@@ -255,6 +195,7 @@ section h3 {
 }
 
 .practice h2 {
+  margin: 34px 0 0 0;
   font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
   font-size: 38px;
   font-weight: 800;
@@ -313,17 +254,22 @@ section h3 {
   float: left;
 }
 
+.directions {
+  margin: 0 auto;
+  width: 30%;
+}
+
 footer {
   padding: 10px;
   text-align: right;
   font-size: 15px;
 
-  background: linear-gradient(to right, #007203, #CEE2CC);
+  background: linear-gradient(to right, #0505FF, #CEE2CC);
 }
 
 footer span {
   display: block;
   float: right;
-  color: #197C00;
+  color: #0505FF;
   font-weight: 800;
 }
