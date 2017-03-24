@@ -17,15 +17,6 @@
   font-style: normal;
   font-weight: normal;
 }
-@font-face {
-  font-family: "CopperplateCyrillic-Bold";
-  src: url("../fonts/CopperplateCyrillic-Bold.eot");
-  src: url("../fonts/CopperplateCyrillic-Bold.eot?#iefix") format("embedded-opentype"), 
-  url("../fonts/CopperplateCyrillic-Bold.woff") format("woff"), 
-  url("../fonts/CopperplateCyrillic-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
 
 @font-face{
   font-family: "GentiumBookBasic";
@@ -129,7 +120,7 @@ header h1 {
 .fio h2 {
   margin: 15px 0 0 0; 
   padding: 0;
-  font-family: "CopperplateCyrillic-Bold", Georgia, "Times New Roman", Times, serif;
+  font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
   color: #000000;
   font-size: 56px; 
   font-weight: 800;
@@ -140,7 +131,7 @@ header h1 {
 .fio h3 {
   margin: 0; 
   padding: 0;
-  font-family: "CopperplateCyrillic-Bold", Georgia, "Times New Roman", Times, serif;
+  font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
   color: #000000;
   font-size: 43px; 
   font-weight: 800;
