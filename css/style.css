@@ -60,7 +60,7 @@ body {
 
 header {
   position: relative;
-  padding: 22px;
+  padding: 12px;
   background: linear-gradient(to right, #0505FF, #CEE2CC);
   font-family: "CopperplateCyrillic-Bold", Georgia, "Times New Roman", Times, serif;
   color: #ffffff;
@@ -71,7 +71,6 @@ header {
 }
 
 header h1 {
-  padding: 10px;
   margin: 0;
 }
 
@@ -83,7 +82,7 @@ header h1 {
 
 .judiciary {
   position: absolute;
-  top: 43%;
+  top: 31%;
   left: 1%;
 }
 
