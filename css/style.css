@@ -64,7 +64,7 @@ header {
   background: linear-gradient(to right, #0505FF, #CEE2CC);
   font-family: "CopperplateCyrillic-Bold", Georgia, "Times New Roman", Times, serif;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   text-align: center;
   text-shadow: 0 1px 2px rgba(1, 1, 1, 0.64);
@@ -83,8 +83,8 @@ header h1 {
 
 .judiciary {
   position: absolute;
-  top: 10%;
-  left: 7%;
+  top: 43%;
+  left: 1%;
 }
 
 .clearfix::after {
