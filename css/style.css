@@ -49,15 +49,16 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url("../img/pattern.jpg");
 }
 
 .wrapper {
   margin: 0 auto;
-  width: 900px;
-  background-image: url("../img/pattern.jpg");
+  padding: 10px;
   font-family: "GentiumBookBasic", Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
 }
-
 header {
   position: relative;
   padding: 12px;
@@ -69,21 +70,15 @@ header {
   text-align: center;
   text-shadow: 0 1px 2px rgba(1, 1, 1, 0.64);
 }
-
-header h1 {
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header__title {
   margin: 0;
-}
-
-.gerb {
-  position: absolute;
-  top: 4%;
-  right: 6%;
-}
-
-.judiciary {
-  position: absolute;
-  top: 31%;
-  left: 1%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .clearfix::after {
@@ -93,14 +88,15 @@ header h1 {
 }
 
 .main {
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contact {
   padding: 10px;
-  width: 33%;
-  float: left;
 
+  float: left;
   font-size: 20px; 
   font-weight: 400;
 }
@@ -111,7 +107,7 @@ header h1 {
 
 .fio {
   padding: 10px 5px 10px 5px;
-  width: 60%;
+
   float: right;
   text-align: center;
 
@@ -127,7 +123,7 @@ header h1 {
   text-align: center;
 }
 
-.fio h3 {
+  .fio h3 {
   margin: 0; 
   padding: 0;
   font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
@@ -141,33 +137,92 @@ header h1 {
 .fio p {
   margin: 2% 12% 0 12%;
 }
-
+.discription {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*
 .principles {
-  padding: 3% 0 0 2%;
-  float: left;
+padding: 3% 0 0 10%;
+float: left;
 }
 
 .team {
-  padding: 3% 16% 0 3%;
-  float: right;
+padding: 3% 16% 0 10%;
+float: right;
+}*/
+
+/*
+.economy {
+margin: 10px;
+padding: 10px;
+width: 28%;
+float: left;
+
 }
 
-section h3 {
+.bankruptcy {
+margin: 10px;
+padding: 10px;
+width: 28%;
+float: left;
+border-right: 3px solid #000000;
+border-left: 3px solid #000000;
+}
+
+.crime {
+margin: 10px;
+padding: 10px;
+width: 28%;
+float: left;
+} */
+.block {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-right: 3px solid #000000;
+  border-left: 3px solid #000000;
+}
+ 
+  
+.practice {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  
+.practice h2 {
+  width: 100%;
+  margin: 2% 0 0 0;
+  font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
+  font-size: 38px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience__item {
+  position: relative;
+  padding: 14% 21%;
+  width: 100%;
+  background-image: url('../img/background-section.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+.experience__item__title {
   font-family: "YesevaOne", Georgia, "Times New Roman", Times, serif;
   font-size: 25px;
   font-weight: 400;
   text-align: center;
   text-shadow: 0 1px 2px rgba(1, 1, 1, 0.64);
 }
-
-.experience {
-  position: relative;
-  padding: 35px 75px 54px 88px;
-  width: 31%;
-  float: left;
-  z-index: 2;
-
-}
+ 
 .fon {
   position: absolute;
   top:0;
@@ -176,77 +231,118 @@ section h3 {
   height:100%;
   z-index: -1;
 }
+  
 
-.activities {
-  position: relative;
-  padding: 35px 75px 62px 88px;
-  width: 32%;
-  float: left;
-  z-index: 2;
+/*form*/
+
+.title {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 26px;
+}
+.btn {
+  display: block;
+  width: 80%;
+  max-width: 200px;
+  margin: 1rem auto;
+  border: 1px solid #595959;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #000000;
+  border-radius: 100px;
+  transition: 0.2s;
+  text-align: center;
+  font-size: 16px;
+}
+.btn:hover {
+  text-decoration: none;
+  background-color: blue;
+  color: #ffffff;
 }
 
-.practice {
-  overflow: hidden;
+button {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+}
+button:active, button:visited, button:focus  {
+  border: none;
+  box-shadow: none;
+}
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
 }
 
-.practice h2 {
-  margin: 2% 0 0 0;
-  font-family: "Kurale-Regular", Georgia, "Times New Roman", Times, serif;
-  font-size: 38px;
-  font-weight: 800;
-  text-transform: uppercase;
+.form {
+  background: #ffffff url('../img/bg-form.jpg') no-repeat center center;
+  background-size: cover;
+  color: #000000;
+  justify-content: center;
+  padding: 6% 6%;
   text-align: center;
 }
-
-/*высоту колонок выровняла %-тами*/
-/*
-.economy {
-  margin: 10px;
-  padding: 10px;
-  width: 25%;
-  float: left;
-  border: 3px solid #000000;
+.form__wrapper {
+  margin: 0 auto;
 }
 
-.bankruptcy {
-  margin: 10px;
-  padding: 10px;
-  width: 32%;
-  float: left;
-  border: 3px solid #000000;
+#messegeResult p{
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
 }
-
-.crime {
-  margin: 10px;
-  padding: 10px;
-  width: 27%;
-  float: left;
-  border: 3px solid #000000;
+form{
+  width: 300px;
+  margin: 0 auto;
 }
-*/
-/*или сделать так:*/
-.economy {
-  margin: 10px;
-  padding: 10px;
-  width: 28%;
-  float: left;
+input, 
+select {
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  border-bottom: 5px solid #ebeae6;
+  margin: 1%;
+  padding: 0 15%;
+  text-align: left;
+  font: 400 14px 'PT Sans', sans-serif;
+  display: inline-block ;
+  width: auto;
+}  
+select {
+  padding: 0 13%;
+}
+#button{
+  cursor: pointer;
+}
+input,
+select,
+textarea,
+#button:active, 
+#button:focus {
+  outline: none;
+}
+#button::-moz-focus-inner {
+  border: 0;
+}
+textarea {
+  width: 80%;
+  padding: 0 3%;
+  font: 400 14px 'PT Sans', sans-serif;
+}
+textarea:-moz-placeholder { 
+  padding: 0;
+  font: 400 14px 'PT Sans', sans-serif;
+  width: 100%;
 
 }
-
-.bankruptcy {
-  margin: 10px;
-  padding: 10px;
-  width: 28%;
-  float: left;
-  border-right: 3px solid #000000;
-  border-left: 3px solid #000000;
-}
-
-.crime {
-  margin: 10px;
-  padding: 10px;
-  width: 28%;
-  float: left;
+textarea::-webkit-input-placeholder { 
+  padding: 0;
+  font: 400 14px 'PT Sans', sans-serif;
+    width: 100%;
 }
 
 footer {
@@ -256,10 +352,59 @@ footer {
 
   background: linear-gradient(to right, #0505FF, #CEE2CC);
 }
+.float-social {
+  display: none;
+  float: left;
+}
+
+.footer-info {
+  float: right;
+}
 
 footer span {
   display: block;
   float: right;
   color: #0505FF;
   font-weight: 800;
+}
+
+@media screen and (min-width: 640px) {
+  .block {
+    width: 42%;
+    border: none;
+
+  }
+  .block:nth-child(2) {
+    border-right: 3px solid #000000;
+  }
+  .experience__item {
+    padding: 15% 10%;
+    width: 30%;
+  }
+  .form {
+    padding: 2% 2%;
+  }
+  .form__title {
+    padding: 2% 0;
+  }
+  .form__wrapper {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1140px) {
+  .wrapper {
+    width: 1120px;
+  }
+  .block {
+    width: 29%;
+  }
+  .experience__item {
+    padding: 5% 11%;
+    width: 28%;
+  }
+  .block:nth-child(3) {
+    border-right: 3px solid #000000;
+  }
 }
